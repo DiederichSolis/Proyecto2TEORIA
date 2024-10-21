@@ -13,11 +13,8 @@ if __name__ == "__main__":
     simbolo_inicial = list(reglas_gramatica.keys())[0]  # Usar el primer símbolo como entrada
 
     if reglas_gramatica:
-        reglas_cnf = convertir_a_CNF(reglas_gramatica, simbolo_inicial)
-        print("Gramática convertida a CNF:")
-        for lhs, rhs_list in reglas_cnf.items():
-            print(f"{lhs} -> {rhs_list}")
-
+        reglas_gramaticas = convertir_a_CNF(reglas_gramatica, simbolo_inicial)
+        
 
     oracion_usuario = input("Ingrese una oración en inglés: ").split()
 
@@ -33,7 +30,7 @@ if __name__ == "__main__":
 
     if aceptada:
         print("La oración es aceptada.")
-        visualize_tree(tabla_cyk, reglas_cnf, sentence)
+        visualize_tree(tabla_cyk, reglas_gramaticas, sentence)
     else:
         print("La oración NO es aceptada.")
 
