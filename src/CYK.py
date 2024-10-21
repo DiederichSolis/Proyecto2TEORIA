@@ -1,4 +1,5 @@
 def cykParse(grammar: dict, word: str) -> (bool,list|None):
+
     """
     Implementa el algoritmo CYK (Cocke-Younger-Kasami) para analizar si una palabra dada
     puede ser generada por una gramática libre de contexto (CFG) en forma normal de Chomsky (CNF).
