@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     tiempo_inicio = time.time()
 
-    aceptada, tabla_cyk = cykParse(reglas_gramatica, sentence)
+    aceptada, tabla_cyk = cykParse(reglas_gramatica, sentence, simbolo_inicial)
 
 
     print(tabla_cyk)
