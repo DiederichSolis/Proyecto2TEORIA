@@ -4,10 +4,6 @@ import os
 direccion = os.path.dirname(os.path.abspath(__file__))
 Input = os.path.join(direccion, '../input')
 Output = os.path.join(direccion, '../output')
-
-# Ingreso de la ruta
-ruta = 'input\gr.txt'
-
-# Manejo de creacion por si no existen
+ruta = '/Users/diederichsolis/Documents/carpeta sin título/Teoria-Computacion-Gabriel-Paz/Proyecto2/input/gramatica.txt'
 os.makedirs(Input, exist_ok=True)
 os.makedirs(Output, exist_ok=True)
